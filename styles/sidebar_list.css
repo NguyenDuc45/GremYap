@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Pixelify Sans", Arial, Helvetica, sans-serif;
+    color: #1b305a;
+}
+
+body {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.title {
+    font-size: 150%;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+.subtitle, .no-request {
+    font-size: 130%;
+    font-weight: bold;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    margin-top: 10px;
+}
+
+.subtitle {
+    border-bottom: 1px solid gray;
+}
+
+form {
+    padding: 10px;
+    border-bottom: 1px solid gray;
+}
+
+form p {
+    font-size: 150%;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+form input[type="text"] {
+    width: 100%;
+    height: 28px;
+    padding: 0 5px;
+    margin-bottom: 10px;
+    font-size: 110%;
+}
+
+form input[type="text"]:focus {
+    outline: none;
+}
+
+form input[type="submit"] {
+    display: inline-block;
+    width: 30%;
+    height: 32px;
+    color: white;
+    background-color: #2c3c5d;
+    font-size: 105%;
+    border: none;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: #1c273d;
+}
+
+form input[type="submit"]:active {
+    background-color: #111827;
+}
+
+a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.item {
+    display: flex;
+    position: relative;
+    padding: 5px 0;
+    border-bottom: 1px solid gray;
+}
+
+.item:hover {
+    background-color: rgba(182, 182, 182, 0.5);
+}
+
+/* .item:nth-child(odd) {
+    background-color: lightgray;
+} */
+
+.item img {
+    flex: 0 1 auto;
+}
+
+.item .avatar {
+    width: 60px;
+    height: 60px;
+    margin: 5px 10px 5px 5px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+.item .information{
+    flex: 1 1 auto;
+    margin: auto;
+}
+
+.item .information p {
+    display: inline-block;
+    margin: 5px 0;
+}
+
+.item .information .name {
+    width: 100%;
+    font-size: 120%;
+    font-weight: bold;
+}
+
+.item .information .age {
+    width: 30%;
+}
+
+.item .checkmark {
+    width: 10%;
+    height: 10%;
+    margin: auto;
+    margin-right: 10px;
+}
+
+/* messages.php */
+.information .message-information {
+    display: flex;
+}
+
+.information .message-information .last-message {
+    flex: 3;
+}
+
+.information .message-information .time {
+    flex: 1;
+    text-align: right;
+    padding-right: 5px;
+}
+/* ----- */

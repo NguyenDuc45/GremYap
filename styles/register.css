@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Pixelify Sans", Arial, Helvetica, sans-serif;
+    color: #1b305a;
+}
+
+body {
+    background-image: url(../resources/img/bg1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+body>img {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    max-width: 15%;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form {
+    width: 60%;
+    height: 80%;
+    padding: 20px;
+    box-shadow: 0 0 15px rgb(110, 110, 110);
+    background-color: rgba(255, 199, 233, 0.5);
+    text-align: center;
+}
+
+.btn {
+    margin-bottom: 20px;
+}
+
+.btn a:link, .btn a:visited {
+    font-size: 150%;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+  
+.btn a:hover {
+    background-color: rgba(255, 27, 133, 0.3);
+}
+
+.btn a:active {
+    background-color: rgba(151, 2, 72, 0.3);
+}
+
+.btn #register {
+    border-bottom: 4px solid rgb(255, 30, 120);
+}
+
+.input {
+    display: inline-block;
+    width: 90%;
+    text-align: left;
+}
+
+form label {
+    font-size: 120%;
+}
+
+form input[type="text"], form input[type="password"], form input[type="email"], form input[type="date"] {
+    width: 100%;
+    height: 32px;
+    padding: 0 5px;
+    margin-bottom: 10px;
+    font-size: 120%;
+    background-color: rgba(255, 151, 192, 0.3);
+    border: 1px solid #1b305a;
+}
+
+form input[type="text"]:focus, form input[type="password"]:focus, form input[type="email"]:focus, form input[type="date"]:focus {
+    outline: none;
+}
+
+form input[type="text"]:hover, form input[type="password"]:hover, form input[type="email"]:hover, form input[type="date"]:hover {
+    outline: 1px solid #1b305a;
+}
+
+form input[type="file"] {
+    display: none;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+}
+
+.box>div {
+    width: 30%;
+}
+
+.box .input-middle {
+    margin: 0 20px;
+}
+
+.box .input-right .upload-btn {
+    display: inline-block;
+    width: 100%;
+    height: 32px;
+    padding-top: 3px;
+    text-align: center;
+    font-size: 120%;
+    background-color: rgba(255, 151, 192, 0.3);
+    border: 1px solid #1b305a;
+    cursor: pointer;
+}
+
+.box .input-right .upload-btn:hover {
+    outline: 1px solid #1b305a;
+}
+
+.box .input-right .prev-img {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.box .input-right .prev-img img {
+    flex: 0 1 auto;
+    max-width: 45%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    outline: 1px solid #1b305a;
+}
+
+.box .input-right .prev-img .filler {
+    flex: 1 1 auto;
+}
+
+form input[type="submit"] {
+    display: inline-block;
+    width: 15%;
+    height: 32px;
+    margin-top: 20px;
+    background-color: rgb(255, 151, 192);
+    border: 1px solid #1b305a;
+    font-size: 120%;
+}
+
+form input[type="submit"]:hover {
+    background-color: rgb(252, 119, 172);
+    outline: 1px solid #1b305a;
+    cursor: pointer;
+}
+
+.error {
+    font-size: 120%;
+    color: rgb(200, 0, 0); 
+    margin-top: 20px
+}
+
+.login {
+    font-size: 120%;
+}
+
+.login a:hover {
+    color: rgb(201, 71, 93);
+}

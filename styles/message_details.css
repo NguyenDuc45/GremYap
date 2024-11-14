@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Pixelify Sans", Arial, Helvetica, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column;
+}
+
+.head {
+    display: flex;
+    flex: 0 1 auto;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: white;
+}
+
+.head img {
+    width: 50px;
+    aspect-ratio: 1 / 1;
+    margin: 7px 20px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+.head p {
+    font-size: 150%;
+    font-weight: bold;
+    margin-right: 40px;
+}
+
+.head a:link, .head a:visited {
+    padding: 10px;
+    background-color: #2c3c5d;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.head a:hover {
+    background-color: #1c273d;
+}
+
+.head a:active {
+    background-color: #111827;
+}
+
+.content {
+    /* display: flex;
+    flex-direction: column-reverse; */
+    overflow: auto;
+    flex: 1 1 auto;
+    background-color: rgba(192, 192, 192, 0.5);
+}
+
+.content .message {
+    width: 98%;
+    margin: 10px;
+}
+
+.img1, .img2 {
+    width: 50px;
+    aspect-ratio: 1 / 1;
+    border: 1px solid #2c3c5d;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+.img-mes-1, .img-mes-2 {
+    max-width: 40%;
+    max-height: 200px;
+}
+
+.content p {
+    max-width: 80%;
+    font-size: 120%;
+    color: white;
+    background-color: #2c3c5d;
+    padding: 10px;
+    border-radius: 20px;
+    word-wrap: break-word;
+}
+
+.message1, .img1, .p1 , .img-mes-1{
+    float: right;
+}
+
+.content .message1 .img1 {
+    margin-left: 10px;
+}
+
+.message2, .img2, .p2 , .img-mes-2 {
+    float: left;
+}
+
+.content .message2 .img2 {
+    margin-right: 10px;
+}
+
+.bottom {
+    flex: 0 1 auto;
+    position: sticky;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.bottom form {
+    display: flex;
+    background-color: white;
+}
+
+.bottom input[type="text"] {
+    width: 100%;
+    height: 32px;
+    padding-left: 10px;
+    font-size: 110%;
+    border: 1px solid gray;
+    border-radius: 0;
+}
+
+.bottom input:focus {
+    outline: none;
+}
+
+.bottom input[type="file"], .bottom input[type="submit"] {
+    display: none;
+}
+
+.bottom .image, .bottom .submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    border: 1px solid gray;
+    border-left: none;
+}
+
+.bottom label img{
+    width: 80%;
+    cursor: pointer;
+}
